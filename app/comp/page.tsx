@@ -1,1 +1,3 @@
-export default function compPage() {}
+export default function compPage() {
+  return <></>;
+}
