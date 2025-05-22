@@ -9,7 +9,12 @@ interface style {
 export default function DragImage({ img, width }: style) {
   return (
     <>
-      <div className="border border-black p-1.5 rounded-lg ">
+      <div
+        className="border border-black p-1.5 rounded-lg curs"
+        onMouseMove={(e) => {
+          console.log(e.target);
+        }}
+      >
         <motion.img
           drag
           dragConstraints={{
