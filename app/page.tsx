@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import ThreeCardScroll from "./components/card/ThreeCardScroll";
+import DarkBgGrid from "./components/Background/Dark-Bg-grid";
 
 const img1 =
   "https://img.freepik.com/free-photo/anime-japanese-character_23-2151478190.jpg?ga=GA1.1.1804695545.1747980337&semt=ais_hybrid&w=740";
