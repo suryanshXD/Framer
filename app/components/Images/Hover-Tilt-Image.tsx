@@ -14,12 +14,18 @@ export default function HoverTiltImage({ img, width }: style) {
           rotateX: 10,
           rotateY: 10,
           scale: 1.05,
-          transition: { type: "spring", stiffness: 300, damping: 20 },
+          transition: {
+            type: "spring",
+            stiffness: 300,
+            damping: 20,
+            duration: 2,
+          },
         }}
         whileTap={{ scale: 1.15 }}
         style={{ perspective: 1000 }}
-        className={`relative  border w-${width} border-black cursor-pointer hover:shadow-2xl`}
+        className={`cursor-pointer`}
         src={`${img}`}
+        width={`${width}`}
       />
     </>
   );
