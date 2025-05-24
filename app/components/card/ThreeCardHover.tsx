@@ -13,7 +13,7 @@ export default function ThreeCardHover({ img1, img2, img3, width }: style) {
     <motion.div
       initial="initial"
       whileHover="hover"
-      className="flex justify-center size-"
+      className="flex justify-center"
     >
       <motion.img
         className={`absolute bg-green-200 rounded-md z-20 text-center flex items-center justify-center`}

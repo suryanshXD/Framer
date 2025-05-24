@@ -46,7 +46,7 @@ export default function HoverTiltImage({ img, width }: style) {
         }}
         onMouseMove={handelMouseMove}
         onMouseLeave={handelMouseLeave}
-        className="absolute p-10  rounded-lg bg-gradient-to-br from-indigo-300 to-violet-200 shadow-2xl"
+        className="absolute p-6  rounded-lg bg-gradient-to-br from-indigo-300 to-violet-200 shadow-2xl"
       >
         <motion.img
           style={{
