@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import HoverTiltImage from "./components/3D Effect/Hover-Tilt-Image";
+import Text from "./components/Background/Text";
 
 const img1 =
   "https://img.freepik.com/free-photo/anime-japanese-character_23-2151478190.jpg?ga=GA1.1.1804695545.1747980337&semt=ais_hybrid&w=740";
@@ -14,8 +15,8 @@ const img4 =
 export default function Home() {
   return (
     <>
-      <div className="flex justify-center mt-200 mb-300">
-        <HoverTiltImage img={img3} width={400} />
+      <div className="flex justify-center  mt-200 mb-300">
+        <Text text="Testimonials" />
       </div>
     </>
   );
