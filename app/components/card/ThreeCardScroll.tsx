@@ -13,7 +13,7 @@ export default function ThreeCardScroll({ img1, img2, img3, width }: style) {
     <motion.div
       initial="initial"
       whileInView="inView"
-      viewport={{ amount: "all", once: true }}
+      viewport={{ amount: "all" }}
       className="flex justify-center size-"
     >
       <motion.img
@@ -22,7 +22,7 @@ export default function ThreeCardScroll({ img1, img2, img3, width }: style) {
           initial: { x: 0, rotate: 0 },
           inView: { x: -360, rotate: 0 },
         }}
-        transition={{ duration: 2 }}
+        transition={{ duration: 1 }}
         src={`${img1}`}
         width={width}
       />
@@ -33,7 +33,7 @@ export default function ThreeCardScroll({ img1, img2, img3, width }: style) {
           initial: { x: 0, rotate: 20 },
           inView: { x: 0, rotate: 0 },
         }}
-        transition={{ duration: 2 }}
+        transition={{ duration: 1 }}
         src={`${img2}`}
         width={width}
       />
@@ -44,7 +44,7 @@ export default function ThreeCardScroll({ img1, img2, img3, width }: style) {
           initial: { x: 0, rotate: 10 },
           inView: { x: 360, rotate: 0 },
         }}
-        transition={{ duration: 2 }}
+        transition={{ duration: 1 }}
         src={`${img3}`}
         width={width}
       />

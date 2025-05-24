@@ -6,7 +6,7 @@ interface style {
   width: number;
 }
 
-export default function HoverTiltImage({ img, width }: style) {
+export default function HoverTapImage({ img, width }: style) {
   return (
     <>
       <motion.img
