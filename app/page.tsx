@@ -1,10 +1,8 @@
 "use client";
 import React from "react";
-import HoverTiltImage from "./components/3D Effect/Hover-Tilt-Image";
-import Text from "./components/Background/Text";
-import Header from "./components/Header/Header";
-import RainbowButton from "./components/Button/Rainbow-Button";
-import CardScrollUp from "./components/card/Card-Scroll-Up";
+import Text from "./components/Text/Texts";
+import ScollUpText from "./components/Text/One-Text-Scroll-Down";
+import TextHover from "./components/Text/Staggered-Text";
 
 const img1 =
   "https://img.freepik.com/free-photo/anime-japanese-character_23-2151478190.jpg?ga=GA1.1.1804695545.1747980337&semt=ais_hybrid&w=740";
@@ -18,8 +16,14 @@ const img4 =
 export default function Home() {
   return (
     <>
+      <div className="mt-20 ml-5">
+        <Text text="Animate anythig with framer motion Animate anythig with framer motion Animate anythig with framer motion Animate anythig with framer" />
+        <div className="text-xl">
+          <TextHover text="Animate" />
+        </div>
+      </div>
       <div className="flex justify-center max-h-fit mt-200 mr-40 mb-200">
-        <CardScrollUp img1={img1} img2={img2} img3={img3} width={200} />
+        <ScollUpText text="Animate" />
       </div>
     </>
   );
