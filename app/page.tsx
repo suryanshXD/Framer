@@ -6,8 +6,9 @@ import TextHover from "./components/Text/Gaping-Text";
 import AnimatedTextBadge from "./components/Badge/Animated-Text-Badge";
 import StaggeredText from "./components/Text/Gaping-Text";
 import ScrollAnimatedText from "./components/Text/Scroll-Animated-Text";
-import DarkBgGrid from "./components/Background/Dark-Bg-grid";
+import DarkBgGrid from "./components/Background/Dark-grid-Masked";
 import RotateWord from "./components/Text/Rotate-Word";
+import DotLighBg from "./components/Background/Dot-Light";
 
 const img1 =
   "https://img.freepik.com/free-photo/anime-japanese-character_23-2151478190.jpg?ga=GA1.1.1804695545.1747980337&semt=ais_hybrid&w=740";
@@ -21,15 +22,8 @@ const img4 =
 export default function Home() {
   return (
     <>
-      <div className=" mt-20 ml-20 text-sm">
-        <AnimatedTextBadge
-          varient="default"
-          words={["Full-stack", "Devops", "web-3"]}
-        />
-      </div>
-      <div className="flex justify-center mt-200 mb-200">
-        <ScrollAnimatedText text="Animated with framer motion" />
-      </div>
+      <DotLighBg />
+      <DarkBgGrid />
     </>
   );
 }
