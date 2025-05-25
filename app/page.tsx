@@ -1,13 +1,7 @@
 "use client";
 import React from "react";
-import Text from "./components/Text/Texts";
-import ScollUpText from "./components/Text/Scroll-Animated-Text";
-import TextHover from "./components/Text/Gaping-Text";
-import AnimatedTextBadge from "./components/Badge/Animated-Text-Badge";
-import StaggeredText from "./components/Text/Gaping-Text";
-import ScrollAnimatedText from "./components/Text/Scroll-Animated-Text";
-import DarkBgGrid from "./components/Background/Dark-grid-Masked";
-import RotateWord from "./components/Text/Rotate-Word";
+import DarkGridBg from "./components/Background/Dark-Grid";
+import DarkGridMasked from "./components/Background/Dark-grid-Masked";
 import DotLighBg from "./components/Background/Dot-Light";
 
 const img1 =
@@ -22,8 +16,9 @@ const img4 =
 export default function Home() {
   return (
     <>
-      <DotLighBg />
-      <DarkBgGrid />
+      <DarkGridMasked>
+        <div>Hii</div>
+      </DarkGridMasked>
     </>
   );
 }
