@@ -7,7 +7,7 @@ import {
   useSpring,
 } from "framer-motion";
 
-export default function ScollUpText({ text }: { text: string }) {
+export default function ScrollAnimatedText({ text }: { text: string }) {
   const defaultAnimation = {
     hidden: {
       opacity: 0,
@@ -27,10 +27,11 @@ export default function ScollUpText({ text }: { text: string }) {
         viewport={{ once: true }}
         className="text-4xl"
       >
-        {text.split("").map((char) => (
+        {text.split("").map((char, i) => (
           <motion.span
+            key={i}
             variants={defaultAnimation}
-            transition={{ duration: 1 }}
+            transition={{ duration: 1, delay: i * 0.1 }}
             viewport={{ amount: "all" }}
           >
             {char}
