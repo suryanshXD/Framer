@@ -21,14 +21,10 @@ const img4 =
 export default function Home() {
   return (
     <>
-      <div className=" mt-20 ml-20 text-md">
-        <RotateWord
-          text="You are"
-          words={[
-            "Vibhuti Nalla",
-            "Tiwari chadi baiyan",
-            "Angoori english medium",
-          ]}
+      <div className=" mt-20 ml-20 text-sm">
+        <AnimatedTextBadge
+          varient="default"
+          words={["Full-stack", "Devops", "web-3"]}
         />
       </div>
       <div className="flex justify-center mt-200 mb-200">
