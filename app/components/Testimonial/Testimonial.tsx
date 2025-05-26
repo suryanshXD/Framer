@@ -24,7 +24,7 @@ export default function Testimonial() {
         <motion.span whileTap={{ scale: [0.8] }}>
           <ArrowLeft
             onClick={handleNext}
-            className="text-black size-6 mt-16  font-semibold bg-white rounded-full p-1 border border-black ml-2.5"
+            className="text-black mt-16 size-6 font-semibold bg-white rounded-full p-1 border border-black ml-2.5"
           />
         </motion.span>
         <div className="flex flex-row py-2 w-full items-center">
@@ -32,7 +32,7 @@ export default function Testimonial() {
             <motion.span
               key={index.name}
               initial={{ opacity: 0, x: -40, scale: 1 }}
-              animate={{ opacity: 1, x: 0, scale: [0.7, 1.05, 1] }}
+              animate={{ opacity: 1, x: 0, scale: [0.7, 1, 0.95] }}
             >
               <Image
                 src={index.img}
@@ -68,7 +68,7 @@ export default function Testimonial() {
             </div>
           </div>
         </div>
-        <motion.span whileTap={{ scale: 0.9 }}>
+        <motion.span whileTap={{ scale: 0.8 }}>
           <ArrowRight
             onClick={handlePrev}
             className="text-black mt-16 size-6 font-semibold bg-white rounded-full p-1 border border-black mr-2.5"
@@ -83,12 +83,12 @@ const feed = [
   {
     img: img2,
     name: "Suryansh",
-    testimonial: "Feels great using your product",
+    testimonial: "Your product seems to be the perfect market fit.",
   },
   {
     img: img2,
     name: "Aryan",
     testimonial:
-      "Better than any other out in the market keep going great product",
+      "Better than any other out there in the market keep going great product",
   },
 ];
