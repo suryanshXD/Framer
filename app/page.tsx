@@ -9,6 +9,8 @@ import GapingText from "./components/Text/Gaping-Text";
 import RotateWord from "./components/Text/Rotate-Word";
 import ScrollAnimatedText from "./components/Text/Scroll-Animated-Text";
 import Text from "./components/Text/Texts";
+import DragImage from "./components/Images/Darg-Images";
+import HoverTapImage from "./components/Images/Hover-Tap-Image";
 
 const img1 =
   "https://img.freepik.com/free-photo/anime-japanese-character_23-2151478190.jpg?ga=GA1.1.1804695545.1747980337&semt=ais_hybrid&w=740";
@@ -33,7 +35,9 @@ export default function Home() {
   ];
   return (
     <>
-      <div className="w-full h-screen bg-white flex justify-center items-center"></div>
+      <div className="w-full h-screen bg-white flex justify-center items-center">
+        <HoverTapImage img={img3} width={200} />
+      </div>
     </>
   );
 }

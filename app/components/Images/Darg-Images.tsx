@@ -10,7 +10,7 @@ export default function DragImage({ img, width }: style) {
   return (
     <>
       <div
-        className="border border-black p-1.5 rounded-lg curs"
+        className="ring ring-black bg-neutral-100 p-1.5 rounded-lg cursor-pointer"
         onMouseMove={(e) => {
           console.log(e.target);
         }}

@@ -11,9 +11,9 @@ export default function HoverTapImage({ img, width }: style) {
     <>
       <motion.img
         whileHover={{
-          rotateX: 10,
+          rotateX: -10,
           rotateY: 10,
-          scale: 1.05,
+          scale: 1.12,
           transition: {
             type: "spring",
             stiffness: 300,
@@ -21,7 +21,7 @@ export default function HoverTapImage({ img, width }: style) {
             duration: 2,
           },
         }}
-        whileTap={{ scale: 1.15 }}
+        whileTap={{ scale: 0.95, rotateX: -10, rotateY: 10 }}
         style={{ perspective: 1000 }}
         className={`cursor-pointer`}
         src={`${img}`}
