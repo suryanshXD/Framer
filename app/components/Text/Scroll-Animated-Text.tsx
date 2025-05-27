@@ -25,7 +25,6 @@ export default function ScrollAnimatedText({ text }: { text: string }) {
         whileInView="inView"
         transition={{ staggerChildren: 0.1, duration: 1 }}
         viewport={{ once: true }}
-        className="text-4xl"
       >
         {text.split("").map((char, i) => (
           <motion.span
