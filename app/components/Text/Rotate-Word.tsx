@@ -1,3 +1,4 @@
+"use client";
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react";
 
@@ -27,7 +28,7 @@ export default function RotateWord({ text, words }: content) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.5 }}
-            className="ml-[6px]"
+            className="pl-[6px] w-fit"
           >
             {words[index]}
           </motion.p>

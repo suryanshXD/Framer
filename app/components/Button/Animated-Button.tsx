@@ -2,12 +2,10 @@
 import { motion, useTime, useTransform } from "framer-motion";
 
 interface styling {
-  theme: "black" | "white";
-  textColor: "black" | "white";
   text: string;
 }
 
-export default function AnimatedButton({ theme, textColor, text }: styling) {
+export default function AnimatedButton({ text }: styling) {
   const time = useTime();
   const rotate = useTransform(time, [0, 6000], [0, 360], {
     clamp: false,
@@ -18,9 +16,9 @@ export default function AnimatedButton({ theme, textColor, text }: styling) {
 
   return (
     <>
-      <button className="relative w-36">
+      <button className="relative w-fit">
         <div
-          className={`relative bg-${theme} text-${textColor} text-center border-1  border-black py-3 rounded-lg transition-colors duration-200 z-10 cursor-pointer`}
+          className={`relative bg-black text-white text-center border-1 border-black py-2 px-6 rounded-lg transition-colors duration-200 z-1 cursor-pointer`}
         >
           {text}
         </div>

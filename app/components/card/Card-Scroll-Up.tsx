@@ -22,7 +22,7 @@ export default function CardScrollUp({ img1, img2, img3, width }: content) {
             inView: { opacity: 1, x: -300 },
           }}
           whileHover={{ scale: 0.95 }}
-          transition={{ duration: 1.5 }}
+          transition={{ duration: 1.4 }}
           className="absolute"
           src={`${img1}`}
           alt="img"
@@ -34,7 +34,7 @@ export default function CardScrollUp({ img1, img2, img3, width }: content) {
             inView: { opacity: 1, x: 0 },
           }}
           whileHover={{ scale: 0.95 }}
-          transition={{ duration: 1.5 }}
+          transition={{ duration: 1.4 }}
           className="absolute"
           src={`${img2}`}
           alt="img"
@@ -46,7 +46,7 @@ export default function CardScrollUp({ img1, img2, img3, width }: content) {
             inView: { opacity: 1, x: 300 },
           }}
           whileHover={{ scale: 0.95 }}
-          transition={{ duration: 1.5 }}
+          transition={{ duration: 1.4 }}
           className="absolute"
           src={`${img3}`}
           alt="img"

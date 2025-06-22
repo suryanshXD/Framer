@@ -1,4 +1,4 @@
-import { log } from "console";
+"use client";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 
 interface style {

@@ -20,7 +20,7 @@ export default function Testimonial() {
   };
   return (
     <>
-      <div className="flex flex-row bg-linear-to-r from from-neutral-100 via-blue-200 to-neutral-100 rounded-xl  gap-3 sm:w-full mx-1  md:w-3xl ">
+      <div className="flex flex-row bg-linear-to-r from from-neutral-100 via-blue-200 to-neutral-100 rounded-xl  gap-3 sm:w-full mx-1  md:w-3xl border border-gray-300">
         <motion.span whileTap={{ scale: [0.8] }}>
           <ArrowLeft
             onClick={handleNext}
@@ -58,8 +58,8 @@ export default function Testimonial() {
               {index.testimonial.split("").map((char, i) => (
                 <motion.span
                   key={char + i}
-                  initial={{ opacity: 0, y: 40 }}
-                  animate={{ opacity: 1, y: 0 }}
+                  initial={{ opacity: 0, x: 40 }}
+                  animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.05 * i }}
                 >
                   {char}
@@ -81,7 +81,7 @@ export default function Testimonial() {
 
 const feed = [
   {
-    img: img2,
+    img: img1,
     name: "Suryansh",
     testimonial: "Your product seems to be the perfect market fit.",
   },

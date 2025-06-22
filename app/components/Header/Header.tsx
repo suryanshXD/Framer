@@ -1,5 +1,5 @@
-import { animate, motion } from "framer-motion";
-import { li } from "framer-motion/client";
+"use client";
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 interface content {
@@ -8,6 +8,8 @@ interface content {
   AboutPageRef: string;
   ContactPageRef: string;
   LoginPageRef: string;
+  theme: string;
+  textcolor: string;
 }
 
 export default function Header({
@@ -16,6 +18,8 @@ export default function Header({
   AboutPageRef,
   ContactPageRef,
   LoginPageRef,
+  theme,
+  textcolor,
 }: content) {
   const defaultAnimation = {
     initial: {
@@ -39,7 +43,7 @@ export default function Header({
         transition={{ staggerChildren: 0.1, duration: 0.5 }}
         className="flex flex-row max-w-full justify-between bg-zinc-800 text-white py-3.5"
       >
-        <div className="pl-18 text-lg font-mono">
+        <div className="pl-18 text-2xl font-mono">
           {title.split("").map((char) => (
             <motion.span
               variants={defaultAnimation}

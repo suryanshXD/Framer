@@ -1,11 +1,5 @@
-import {
-  motion,
-  stagger,
-  animate,
-  inView,
-  useScroll,
-  useSpring,
-} from "framer-motion";
+"use client";
+import { motion } from "framer-motion";
 
 export default function ScrollAnimatedText({ text }: { text: string }) {
   const defaultAnimation = {
