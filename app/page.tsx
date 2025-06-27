@@ -17,6 +17,9 @@ import CardScrollUp from "./components/card/Card-Scroll-Up";
 import DragableButton from "./components/Button/Dragable-Button";
 import ModalCard from "./components/card/Modal-Card";
 import RainbowButton from "./components/Button/Rainbow-Button";
+import { Navbar } from "./components/Navbar/Navbar";
+import LayoutAnimation from "./components/Layout/Layout";
+import Sidebar from "./components/SIde-Bar/SideBar";
 
 const img1 =
   "https://img.freepik.com/free-photo/anime-japanese-character_23-2151478190.jpg?ga=GA1.1.1804695545.1747980337&semt=ais_hybrid&w=740";
@@ -41,8 +44,8 @@ export default function Home() {
   ];
   return (
     <>
-      <div className="flex flex-col justify-center items-center w-full h-screen my-200 ">
-        <Text text="Animate with frmaer motion" />
+      <div className="flex flex-col min-h-screen gap-20 ml-[32%]">
+        <Sidebar />
       </div>
     </>
   );
