@@ -24,8 +24,8 @@ export function Navbar() {
   ];
   const [hover, setHover] = useState<number | null>(null);
   return (
-    <div className="my-40">
-      <div className="max-w-4xl bg-gray-50 rounded-full px-2 py-1 mx-auto flex">
+    <div>
+      <div className="sm: max-w-60 md:max-w-xl bg-gray-50 rounded-lg px-2 py-1 mx-auto flex">
         {navbarItem.map((time, idx) => (
           <Link
             onMouseEnter={() => setHover(idx)}
@@ -36,7 +36,7 @@ export function Navbar() {
             {hover === idx && (
               <motion.div
                 layoutId="1"
-                className="bg-black inset-0 absolute rounded-full w-full h-full"
+                className="bg-black inset-0 absolute rounded-lg w-full h-full"
               ></motion.div>
             )}
             <motion.span

@@ -9,7 +9,6 @@ import RotateWord from "./components/Text/Rotate-Word";
 import ScrollAnimatedText from "./components/Text/Scroll-Animated-Text";
 import Text from "./components/Text/Texts";
 import HoverTapImage from "./components/Images/Hover-Tap-Image";
-import Header from "./components/Header/Header";
 import HoverTiltImage from "./components/3D Effect/Hover-Tilt-Image";
 import AnimatedButton from "./components/Button/Animated-Button";
 import AnimatedTextBadge from "./components/Badge/Animated-Text-Badge";
@@ -18,8 +17,7 @@ import DragableButton from "./components/Button/Dragable-Button";
 import ModalCard from "./components/card/Modal-Card";
 import RainbowButton from "./components/Button/Rainbow-Button";
 import { Navbar } from "./components/Navbar/Navbar";
-import LayoutAnimation from "./components/Layout/Layout";
-import Sidebar from "./components/SIde-Bar/SideBar";
+import imgT from "../public/anime-logo.jpg";
 
 const img1 =
   "https://img.freepik.com/free-photo/anime-japanese-character_23-2151478190.jpg?ga=GA1.1.1804695545.1747980337&semt=ais_hybrid&w=740";
@@ -33,10 +31,12 @@ const img4 =
 export default function Home() {
   const feed = [
     {
+      img: imgT,
       name: "Suryansh",
       testimonial: "Feels great using your product",
     },
     {
+      img: imgT,
       name: "Aryan",
       testimonial:
         "Better than any other out in the market keep going great product",
@@ -44,9 +44,11 @@ export default function Home() {
   ];
   return (
     <>
-      <div className="flex flex-col min-h-screen gap-20 ml-[32%]">
-        <Sidebar />
-      </div>
+      <DarkGridMasked>
+        <div className="flex flex-col min-h-screen justify-center items-center">
+          <HoverTiltImage img={img1} width={250} />
+        </div>
+      </DarkGridMasked>
     </>
   );
 }
