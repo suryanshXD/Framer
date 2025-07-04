@@ -42,11 +42,30 @@ export default function Home() {
         "Better than any other out in the market keep going great product",
     },
   ];
+
+  const navbarItems = [
+    {
+      name: "Home",
+      href: "/",
+    },
+    {
+      name: "Home",
+      href: "/",
+    },
+    {
+      name: "Home",
+      href: "/",
+    },
+    {
+      name: "Home",
+      href: "/",
+    },
+  ];
   return (
     <>
       <DarkGridMasked>
-        <div className="flex flex-col min-h-screen justify-center items-center">
-          <HoverTiltImage img={img1} width={250} />
+        <div className="flex flex-col min-h-screen justify-center">
+          <Navbar navbarItem={navbarItems} />
         </div>
       </DarkGridMasked>
     </>

@@ -3,34 +3,25 @@ import Link from "next/link";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-export function Navbar() {
-  const navbarItem = [
-    {
-      name: "Home",
-      herf: "/",
-    },
-    {
-      name: "About",
-      herf: "/about",
-    },
-    {
-      name: "Contact",
-      herf: "/contact",
-    },
-    {
-      name: "Login",
-      herf: "/login",
-    },
-  ];
+interface NavbarItem {
+  name: string;
+  href: string;
+}
+
+interface items {
+  navbarItem: NavbarItem[];
+}
+
+export function Navbar({ navbarItem }: items) {
   const [hover, setHover] = useState<number | null>(null);
   return (
     <div>
       <div className="sm: max-w-60 md:max-w-xl bg-gray-50 rounded-lg px-2 py-1 mx-auto flex">
-        {navbarItem.map((time, idx) => (
+        {navbarItem.map((item, idx) => (
           <Link
             onMouseEnter={() => setHover(idx)}
             onMouseLeave={() => setHover(null)}
-            href={time.herf}
+            href={item.href}
             className="w-full relative text-center text-sm py-3 hover:text-white"
           >
             {hover === idx && (
@@ -45,7 +36,7 @@ export function Navbar() {
               }}
               className="relative"
             >
-              {time.name}
+              {item.name}
             </motion.span>
           </Link>
         ))}
